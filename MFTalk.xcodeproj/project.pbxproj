@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		01D8E5B72EF48F5D00B8459B /* bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 01D8E5AF2EF48F5D00B8459B /* bridge.h */; };
+		01E7F56E2EF2868900C66B45 /* trigger.yml in Resources */ = {isa = PBXBuildFile; fileRef = 01E7F5632EF2868900C66B45 /* trigger.yml */; };
+		01E7F56F2EF2868900C66B45 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 01E7F56C2EF2868900C66B45 /* README.md */; };
+		01E7F5702EF2868900C66B45 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 01E7F56B2EF2868900C66B45 /* .gitignore */; };
+		01E7F5712EF2868900C66B45 /* encryption.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E7F5682EF2868900C66B45 /* encryption.js */; };
+		01E7F5722EF2868900C66B45 /* encryption.py in Resources */ = {isa = PBXBuildFile; fileRef = 01E7F5692EF2868900C66B45 /* encryption.py */; };
+		01E7F58F2EF2B6E100C66B45 /* ambercypher.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E7F5852EF2890E00C66B45 /* ambercypher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		01BC1D5D2EAF7DBF00CE866E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,7 +37,33 @@
 		01BC1D4D2EAF7DBB00CE866E /* MFTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BC1D5C2EAF7DBF00CE866E /* MFTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BC1D662EAF7DBF00CE866E /* MFTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D8E5AF2EF48F5D00B8459B /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		01E7F5632EF2868900C66B45 /* trigger.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = trigger.yml; sourceTree = "<group>"; };
+		01E7F5662EF2868900C66B45 /* demo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = demo.c; sourceTree = "<group>"; };
+		01E7F5672EF2868900C66B45 /* encryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = encryption.h; sourceTree = "<group>"; };
+		01E7F5682EF2868900C66B45 /* encryption.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = encryption.js; sourceTree = "<group>"; };
+		01E7F5692EF2868900C66B45 /* encryption.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = encryption.py; sourceTree = "<group>"; };
+		01E7F56B2EF2868900C66B45 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		01E7F56C2EF2868900C66B45 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		01E7F5852EF2890E00C66B45 /* ambercypher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ambercypher.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0140AED92EF1851100E5B85C /* Exceptions for "MFTalkUITests" folder in "MFTalk" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				mftalkicon.icon,
+			);
+			target = 01BC1D4C2EAF7DBB00CE866E /* MFTalk */;
+		};
+		0140AEDA2EF1851100E5B85C /* Exceptions for "MFTalkUITests" folder in "MFTalkUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				mftalkicon.icon,
+			);
+			target = 01BC1D652EAF7DBF00CE866E /* MFTalkUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		01BC1D4F2EAF7DBB00CE866E /* MFTalk */ = {
@@ -42,6 +78,10 @@
 		};
 		01BC1D692EAF7DBF00CE866E /* MFTalkUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0140AED92EF1851100E5B85C /* Exceptions for "MFTalkUITests" folder in "MFTalk" target */,
+				0140AEDA2EF1851100E5B85C /* Exceptions for "MFTalkUITests" folder in "MFTalkUITests" target */,
+			);
 			path = MFTalkUITests;
 			sourceTree = "<group>";
 		};
@@ -75,10 +115,12 @@
 		01BC1D442EAF7DBB00CE866E = {
 			isa = PBXGroup;
 			children = (
+				01E7F56D2EF2868900C66B45 /* client-ressources */,
 				01BC1D4F2EAF7DBB00CE866E /* MFTalk */,
 				01BC1D5F2EAF7DBF00CE866E /* MFTalkTests */,
 				01BC1D692EAF7DBF00CE866E /* MFTalkUITests */,
 				01BC1D4E2EAF7DBB00CE866E /* Products */,
+				01D8E5AF2EF48F5D00B8459B /* bridge.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,13 +134,65 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		01E7F5642EF2868900C66B45 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				01E7F5632EF2868900C66B45 /* trigger.yml */,
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
+		01E7F5652EF2868900C66B45 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				01E7F5642EF2868900C66B45 /* workflows */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		01E7F56A2EF2868900C66B45 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				01E7F5662EF2868900C66B45 /* demo.c */,
+				01E7F5672EF2868900C66B45 /* encryption.h */,
+				01E7F5682EF2868900C66B45 /* encryption.js */,
+				01E7F5692EF2868900C66B45 /* encryption.py */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		01E7F56D2EF2868900C66B45 /* client-ressources */ = {
+			isa = PBXGroup;
+			children = (
+				01E7F5852EF2890E00C66B45 /* ambercypher.h */,
+				01E7F5652EF2868900C66B45 /* .github */,
+				01E7F56A2EF2868900C66B45 /* utils */,
+				01E7F56B2EF2868900C66B45 /* .gitignore */,
+				01E7F56C2EF2868900C66B45 /* README.md */,
+			);
+			path = "client-ressources";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01E7F58E2EF2B6C100C66B45 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E7F58F2EF2B6E100C66B45 /* ambercypher.h in Headers */,
+				01D8E5B72EF48F5D00B8459B /* bridge.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		01BC1D4C2EAF7DBB00CE866E /* MFTalk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01BC1D702EAF7DBF00CE866E /* Build configuration list for PBXNativeTarget "MFTalk" */;
 			buildPhases = (
+				01E7F58E2EF2B6C100C66B45 /* Headers */,
 				01BC1D492EAF7DBB00CE866E /* Sources */,
 				01BC1D4A2EAF7DBB00CE866E /* Frameworks */,
 				01BC1D4B2EAF7DBB00CE866E /* Resources */,
@@ -212,6 +306,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E7F56E2EF2868900C66B45 /* trigger.yml in Resources */,
+				01E7F56F2EF2868900C66B45 /* README.md in Resources */,
+				01E7F5702EF2868900C66B45 /* .gitignore in Resources */,
+				01E7F5712EF2868900C66B45 /* encryption.js in Resources */,
+				01E7F5722EF2868900C66B45 /* encryption.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,12 +490,18 @@
 		01BC1D712EAF7DBF00CE866E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = mftalkicon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_FRAMEWORK_INCLUDE_PRIVATE_FROM_PUBLIC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A65N3N386A;
 				ENABLE_PREVIEWS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MFTalk;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -409,10 +514,16 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MFTalk.MFTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = bridge.h;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,12 +533,18 @@
 		01BC1D722EAF7DBF00CE866E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = mftalkicon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_FRAMEWORK_INCLUDE_PRIVATE_FROM_PUBLIC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A65N3N386A;
 				ENABLE_PREVIEWS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MFTalk;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -440,10 +557,16 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MFTalk.MFTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = bridge.h;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

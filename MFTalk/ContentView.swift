@@ -9,53 +9,29 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @State var someRandomStuff = ["hello", "blabla", ":-D", "oh yeah, you can swipe me!", "\(Image("NoProfilePic"))"]
+    
+    var body: some View
+    {
+        Text("Welcome to MFTalk")
+        Spacer()
+        List(){
+            ForEach(0..<someRandomStuff.count, id: \.self) { itm in
+                Text(someRandomStuff[itm])
+                    .swipeActions(edge: .leading){
+                        Button("You did it! \(someRandomStuff[itm])", systemImage: "pointer.arrow.ipad"){
 
-    var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        }
+                        .tint(.yellow)
                     }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                    .swipeActions(edge: .trailing){
+                        Button("You wanna delete \(someRandomStuff[itm])?!", systemImage: "trash"){
+                            someRandomStuff.remove(at: itm)
+                        }
+                        .tint(.red)
                     }
-                }
-            }
-        } detail: {
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+                
             }
         }
     }
-}
-
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }
