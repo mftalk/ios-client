@@ -15,7 +15,6 @@ struct MFTalkApp: App {
             Item.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-        //let testelement = amberCencrypt("hello!","pizzalover122", 435534, 35423245)
 
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
