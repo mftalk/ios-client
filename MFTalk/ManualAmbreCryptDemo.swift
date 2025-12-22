@@ -9,11 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @State var testelement = amberCencrypt("hello!","pizzalover122", 4728583, 843948934993445)
-
-    //print(testelement)
-    //var testelemt = "hello world"
-    @State var titl = "kniggs"
+    @State var titl = "hello world!"
 
     var body: some View
     {
@@ -26,7 +22,6 @@ struct ContentView: View {
             .padding()
             .onSubmit {
                 titl = titl
-                print(titl)
             }
     }
 }

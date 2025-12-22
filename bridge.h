@@ -7,6 +7,6 @@
 
 #ifndef bridge_h
 #define bridge_h
-#include "./client-ressources/ambercypher.h"
+#include "./client-resources/ambercypher.h"
 
 #endif /* bridge_h */

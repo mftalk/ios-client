@@ -6,16 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		01D8E5B72EF48F5D00B8459B /* bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 01D8E5AF2EF48F5D00B8459B /* bridge.h */; };
-		01E7F56E2EF2868900C66B45 /* trigger.yml in Resources */ = {isa = PBXBuildFile; fileRef = 01E7F5632EF2868900C66B45 /* trigger.yml */; };
-		01E7F56F2EF2868900C66B45 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 01E7F56C2EF2868900C66B45 /* README.md */; };
-		01E7F5702EF2868900C66B45 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 01E7F56B2EF2868900C66B45 /* .gitignore */; };
-		01E7F5712EF2868900C66B45 /* encryption.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E7F5682EF2868900C66B45 /* encryption.js */; };
-		01E7F5722EF2868900C66B45 /* encryption.py in Resources */ = {isa = PBXBuildFile; fileRef = 01E7F5692EF2868900C66B45 /* encryption.py */; };
-		01E7F58F2EF2B6E100C66B45 /* ambercypher.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E7F5852EF2890E00C66B45 /* ambercypher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		01BC1D5D2EAF7DBF00CE866E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -37,15 +27,14 @@
 		01BC1D4D2EAF7DBB00CE866E /* MFTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BC1D5C2EAF7DBF00CE866E /* MFTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BC1D662EAF7DBF00CE866E /* MFTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01CC0DD82EF9AA620030E396 /* trigger.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = trigger.yml; sourceTree = "<group>"; };
+		01CC0DDB2EF9AA620030E396 /* demo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = demo.c; sourceTree = "<group>"; };
+		01CC0DDC2EF9AA620030E396 /* encryption.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = encryption.js; sourceTree = "<group>"; };
+		01CC0DDD2EF9AA620030E396 /* encryption.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = encryption.py; sourceTree = "<group>"; };
+		01CC0DDF2EF9AA620030E396 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		01CC0DE02EF9AA620030E396 /* ambercypher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ambercypher.h; sourceTree = "<group>"; };
+		01CC0DE12EF9AA620030E396 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		01D8E5AF2EF48F5D00B8459B /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
-		01E7F5632EF2868900C66B45 /* trigger.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = trigger.yml; sourceTree = "<group>"; };
-		01E7F5662EF2868900C66B45 /* demo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = demo.c; sourceTree = "<group>"; };
-		01E7F5672EF2868900C66B45 /* encryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = encryption.h; sourceTree = "<group>"; };
-		01E7F5682EF2868900C66B45 /* encryption.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = encryption.js; sourceTree = "<group>"; };
-		01E7F5692EF2868900C66B45 /* encryption.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = encryption.py; sourceTree = "<group>"; };
-		01E7F56B2EF2868900C66B45 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		01E7F56C2EF2868900C66B45 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		01E7F5852EF2890E00C66B45 /* ambercypher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ambercypher.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -115,7 +104,7 @@
 		01BC1D442EAF7DBB00CE866E = {
 			isa = PBXGroup;
 			children = (
-				01E7F56D2EF2868900C66B45 /* client-ressources */,
+				01CC0DE22EF9AA620030E396 /* client-resources */,
 				01BC1D4F2EAF7DBB00CE866E /* MFTalk */,
 				01BC1D5F2EAF7DBF00CE866E /* MFTalkTests */,
 				01BC1D692EAF7DBF00CE866E /* MFTalkUITests */,
@@ -134,43 +123,42 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		01E7F5642EF2868900C66B45 /* workflows */ = {
+		01CC0DD92EF9AA620030E396 /* workflows */ = {
 			isa = PBXGroup;
 			children = (
-				01E7F5632EF2868900C66B45 /* trigger.yml */,
+				01CC0DD82EF9AA620030E396 /* trigger.yml */,
 			);
 			path = workflows;
 			sourceTree = "<group>";
 		};
-		01E7F5652EF2868900C66B45 /* .github */ = {
+		01CC0DDA2EF9AA620030E396 /* .github */ = {
 			isa = PBXGroup;
 			children = (
-				01E7F5642EF2868900C66B45 /* workflows */,
+				01CC0DD92EF9AA620030E396 /* workflows */,
 			);
 			path = .github;
 			sourceTree = "<group>";
 		};
-		01E7F56A2EF2868900C66B45 /* utils */ = {
+		01CC0DDE2EF9AA620030E396 /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				01E7F5662EF2868900C66B45 /* demo.c */,
-				01E7F5672EF2868900C66B45 /* encryption.h */,
-				01E7F5682EF2868900C66B45 /* encryption.js */,
-				01E7F5692EF2868900C66B45 /* encryption.py */,
+				01CC0DDB2EF9AA620030E396 /* demo.c */,
+				01CC0DDC2EF9AA620030E396 /* encryption.js */,
+				01CC0DDD2EF9AA620030E396 /* encryption.py */,
 			);
 			path = utils;
 			sourceTree = "<group>";
 		};
-		01E7F56D2EF2868900C66B45 /* client-ressources */ = {
+		01CC0DE22EF9AA620030E396 /* client-resources */ = {
 			isa = PBXGroup;
 			children = (
-				01E7F5852EF2890E00C66B45 /* ambercypher.h */,
-				01E7F5652EF2868900C66B45 /* .github */,
-				01E7F56A2EF2868900C66B45 /* utils */,
-				01E7F56B2EF2868900C66B45 /* .gitignore */,
-				01E7F56C2EF2868900C66B45 /* README.md */,
+				01CC0DDA2EF9AA620030E396 /* .github */,
+				01CC0DDE2EF9AA620030E396 /* utils */,
+				01CC0DDF2EF9AA620030E396 /* .gitignore */,
+				01CC0DE02EF9AA620030E396 /* ambercypher.h */,
+				01CC0DE12EF9AA620030E396 /* README.md */,
 			);
-			path = "client-ressources";
+			path = "client-resources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +168,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01E7F58F2EF2B6E100C66B45 /* ambercypher.h in Headers */,
-				01D8E5B72EF48F5D00B8459B /* bridge.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,11 +292,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01E7F56E2EF2868900C66B45 /* trigger.yml in Resources */,
-				01E7F56F2EF2868900C66B45 /* README.md in Resources */,
-				01E7F5702EF2868900C66B45 /* .gitignore in Resources */,
-				01E7F5712EF2868900C66B45 /* encryption.js in Resources */,
-				01E7F5722EF2868900C66B45 /* encryption.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
