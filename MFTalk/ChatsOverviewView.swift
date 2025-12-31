@@ -1,5 +1,5 @@
 //
-//  ChatsView.swift
+//  ChatsOverviewView.swift
 //  MFTalk
 //
 //  Created by B on 22/12/25.
@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-struct ChatsView: View
+struct ChatsOverviewView: View
 {
     struct Contact {
         var username: String
@@ -30,13 +30,17 @@ struct ChatsView: View
                 ForEach(0..<contacts.count, id: \.self) { i in
                     HStack {
                         insertProfilePic(image: contacts[i].profilepic)
-                        Text(contacts[i].username)
+                        NavigationLink(contacts[i].username, value: contacts[i].username)
                         Spacer()
-                        Text("\(contacts.count)")
                     }
                 }
                 .onDelete(perform: delContact)
             }
+            ChatView(chatName: "hans peter")
+            /*
+            .navigationDestination(for: Contact.self) { contact in
+                ChatView(chatName: "hans peter")
+            }*/
             .navigationTitle("MFTalk")
         }
     }

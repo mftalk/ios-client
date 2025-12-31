@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-struct ContentView: View {
+struct ManualAmbreCryptDemo: View {
     @State var titl = "hello world!"
 
     var body: some View
@@ -20,8 +20,6 @@ struct ContentView: View {
         TextField("Plaintext", text: $titl)
             .textFieldStyle(.roundedBorder)
             .padding()
-            .onSubmit {
-                titl = titl
-            }
+            .onSubmit { titl = titl }
     }
 }

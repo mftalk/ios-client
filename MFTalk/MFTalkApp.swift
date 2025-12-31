@@ -12,8 +12,7 @@ import SwiftData
 struct MFTalkApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChatsOverviewView()
         }
-        .modelContainer(sharedModelContainer)
     }
 }
