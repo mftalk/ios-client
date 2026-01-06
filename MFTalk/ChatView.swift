@@ -11,6 +11,9 @@ import SwiftData
 struct ChatView: View {
     var chatName: String
     var body: some View {
-        Label("Hello, you are now in the chat view!", systemImage: "badmington")
+        Image(systemName: "figure.badminton")
+            .foregroundStyle(.orange)
+            .font(.system(size: 50))
+        Text("Hello, you are now in the chat view!")
     }
 }

@@ -30,17 +30,14 @@ struct ChatsOverviewView: View
                 ForEach(0..<contacts.count, id: \.self) { i in
                     HStack {
                         insertProfilePic(image: contacts[i].profilepic)
-                        NavigationLink(contacts[i].username, value: contacts[i].username)
+                        NavigationLink(contacts[i].username) {
+                            ChatView(chatName: contacts[i].username)
+                        }
                         Spacer()
                     }
                 }
                 .onDelete(perform: delContact)
             }
-            ChatView(chatName: "hans peter")
-            /*
-            .navigationDestination(for: Contact.self) { contact in
-                ChatView(chatName: "hans peter")
-            }*/
             .navigationTitle("MFTalk")
         }
     }
