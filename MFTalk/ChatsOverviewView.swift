@@ -38,7 +38,11 @@ struct ChatsOverviewView: View
                 }
                 .onDelete(perform: delContact)
             }
-            .navigationTitle("MFTalk")
+            .listStyle(.inset)
+            .navigationTitle(
+                "MFTalk"
+            )
+            
         }
     }
     

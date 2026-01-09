@@ -9,11 +9,29 @@ import SwiftUI
 import SwiftData
 
 struct ChatView: View {
-    var chatName: String
+    @State var chatName: String
+    @State var currentMsg = ""
+    
     var body: some View {
-        Image(systemName: "figure.badminton")
-            .foregroundStyle(.orange)
-            .font(.system(size: 50))
-        Text("Hello, you are now in the chat view!")
+        Spacer()
+        HStack{
+            HStack {
+                TextField("Message \(chatName)...", text: $currentMsg)
+                    .textFieldStyle(.plain)
+                    .padding()
+                Spacer()
+                Button(action: sendMsg) {
+                    Image(systemName: "arrow.up")
+                        .foregroundColor(.orange)
+                }
+                .glassEffect()
+            }
+            .glassEffect()
+
+            Spacer()
+        }
+    }
+    func sendMsg() {
+        print("message sent!")
     }
 }
