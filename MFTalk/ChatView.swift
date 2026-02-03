@@ -9,27 +9,37 @@ import SwiftUI
 import SwiftData
 
 struct ChatView: View {
+    @Environment(\.colorScheme) var darkMode
     @State var chatName: String
     @State var currentMsg = ""
     
     var body: some View {
         Spacer()
-        HStack{
-            HStack {
-                TextField("Message \(chatName)...", text: $currentMsg)
-                    .textFieldStyle(.plain)
-                    .padding()
-                Spacer()
-                Button(action: sendMsg) {
-                    Image(systemName: "arrow.up")
-                        .foregroundColor(.orange)
-                }
+        HStack {
+            TextField("Message \(chatName)...", text: $currentMsg)
+                .textFieldStyle(.plain)
+                .padding()
+                .background()
+                .clipShape(.capsule)
                 .glassEffect()
-            }
-            .glassEffect()
-
             Spacer()
+            Button(
+                action: {sendMsg()},
+                label: {
+                    Label("Send", systemImage: "arrow.up")
+                        .tint(darkMode == .dark ? .black : .white)
+                        .labelStyle(.iconOnly)
+                        .frame(width: 50, height: 50)
+                        .clipShape(Circle())
+                 }
+            )
+            .background(.accentOrange)
+            .clipShape(Circle())
+            .buttonStyle(.borderless)
         }
+        // distance between keyboard and message field (&send button).
+        .padding(10)
+        
     }
     func sendMsg() {
         print("message sent!")

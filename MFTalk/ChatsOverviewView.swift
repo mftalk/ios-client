@@ -17,9 +17,11 @@ struct ChatsOverviewView: View
     
     @State private var contacts: [Contact] = [
         Contact(username: "alfred", profilepic: Image(systemName:"globe")),
-        Contact(username: "hans peter", profilepic: Image("NoProfilePic")),
+        Contact(username: "hans peter", profilepic: Image(systemName: "book")),
         Contact(username: "ueli", profilepic: Image("NoProfilePic"))
     ]
+    
+    @State private var showSettings = false
     
     // **MAIN UI**
     var body: some View {
@@ -38,6 +40,7 @@ struct ChatsOverviewView: View
                 }
                 .onDelete(perform: delContact)
             }
+            
             .listStyle(.inset)
             .navigationTitle(
                 "MFTalk"
@@ -58,7 +61,7 @@ struct ChatsOverviewView: View
             .frame(width: 45, height: 45, alignment: .topLeading)
             .clipShape(.circle)
             .overlay {
-                Circle().stroke(.orange, lineWidth: 2)
+                Circle().stroke(.accentOrange, lineWidth: 2)
             }
 
     }
