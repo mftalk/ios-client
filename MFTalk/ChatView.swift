@@ -24,7 +24,7 @@ struct ChatView: View {
                 .glassEffect()
             Spacer()
             Button(
-                action: {sendMsg()},
+                action: {sendMsg(msg: currentMsg)},
                 label: {
                     Label("Send", systemImage: "arrow.up")
                         .tint(darkMode == .dark ? .black : .white)
@@ -41,7 +41,7 @@ struct ChatView: View {
         .padding(10)
         
     }
-    func sendMsg() {
+    func sendMsg(msg: String) {
         print("message sent!")
     }
 }
